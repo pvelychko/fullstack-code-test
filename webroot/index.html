@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to KRY</title>
+    <style>
+        div.new-item {
+            margin: 12px;
+            border: 1px solid #eee;
+            display: inline-block;
+            padding: 24px;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #eee;
+            text-align: center;
+        }
+        span.circle-red, span.circle-green, span.circle-yellow {
+            border-radius: 50%;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            background: #ff0000;
+        }
+        span.circle-red {
+            background: #ff0000;
+        }
+        span.circle-green {
+            background: #00ff00;
+        }
+        span.circle-yellow {
+            background: #ffff00;
+        }
+        td {
+            line-height: 32px;
+        }
+    </style>
+</head>
+<body>
+<h3>KRY status poller</h3>
+<table id="service-list">
+    <th>Status</th>
+    <th>Name</th>
+    <th>URL</th>
+    <th>Date</th>
+    <th></th>
+</table>
+
+<div class="new-item">
+    <span>Name</span>
+    <input id="url-name" type="text">
+    <span style="color: #FF0000; font-weight: bold;">*</span><span>Url</span>
+    <input id="url-link" type="text">
+    <button id="post-service">Save</button>
+</div>
+
+</body>
+<script src="static/code.js">
+</script>
+</html>
